@@ -7,7 +7,7 @@ class User(models.Model):
     l_name = models.CharField(max_length=100)
     sl_name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100, null=False, unique=True)
-    password = models.CharField(max_length=100, null=False)
+    password = models.CharField(max_length=100, null=True)
 
     class Meta:
         ordering = ['registered', 'l_name', 'sl_name', 'f_name', 's_name']

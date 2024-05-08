@@ -3,5 +3,5 @@ from Users import views
 
 urlpatterns = [
     path('Users/', views.user_list, name='user_list'),
-    path('login/', views.handle_google_signin, name='handle_google_signin'),
+    path('api/get-session-variables/', views.get_session_variables, name='get_session_variables'),
 ]
